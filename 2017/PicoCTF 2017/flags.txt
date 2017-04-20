@@ -1,0 +1,17 @@
+Keyz (20): who_needs_pwords_anyways
+Master Challenge 1 (50): client_side_is_the_dark_sidea99c64effed2c2f1c9347eff536e949c
+My First SQL (50): be_careful_what_you_let_people_ask_6a69724d2883354dfb842c71fd992d87
+Shells (70): f4eb30af1eaea58d046faf36595be80e
+Little School Bus (75): flag{remember_kids_protect_your_headers_f5e8}
+Ive Got a Secret (75): 1ba85d212f80746e0c61b8d45bc690b6
+Guess the Number (75): 55b6b9591d1781061f859a010a8fe0ef
+Just Keyp Trying (80): flag{pr355_0nwards_a4263f07}
+Flagsay-1 (80): 30935dcac4f1e24e30b9bc8bf1b435b8
+VRGearConsole (95): da1e62f3da550878ed92d3d55d61fe7d
+Master Challenge 2 (100): zippidydooda29494995
+TW_GR_E1_ART (100): at_least_the_world_wasnt_destroyed_by_a_meteor_ad4c3d82ea34de855538845381a616cf
+A Happy Union (110): flag{union?_why_not_onion_b80f530ed953ccdd0dfc6f2456dc7d0e}
+TW_GR_E2_EoTDS (120): i_dont_want_to_say_goodbye__gets_me_every_time_2fa00d62583c852b0e5ae11dcdcbabe1
+No Eyes (125): not_all_errors_should_be_shown_faa8380e951439eebb3d452b5e86f3f9
+Small Sign (140): 635f086917498ec123623c39ef31a81c
+TW_GR_E3_GtI (180): the_new_feature_where_you_manage_your_own_shelf_in_the_refrigerator_was_an_interesting_addition_3a4b094d798ee2e4fc2aac44cf9a5902

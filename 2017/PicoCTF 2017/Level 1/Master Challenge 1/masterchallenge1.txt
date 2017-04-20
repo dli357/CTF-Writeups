@@ -1,0 +1,1 @@
+You just inject make_ajax_request('anystringhere') and it randomly returns the flag

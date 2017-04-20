@@ -1,0 +1,6 @@
+1. Find memory address of win function, in this case: 0x0804852b
+2. Convert memory address to decimal: 134513963
+3. Bitwise shift to the left 4 characters for this int: 2152223408 (use python)
+4. Convert to binary and then to 32-bit signed int: -2142743888 (use online tools) (since other number is too large, you can use this negative number)
+5. Gives you shell -> cat flag.txt
+flag: 55b6b9591d1781061f859a010a8fe0ef

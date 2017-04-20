@@ -1,0 +1,6 @@
+1. Use files from previous level
+2. Found additional file to control enemy movement following hint /server/ai.js
+3. Read over the file
+4. ??? Trial and error'd into the solution????
+4.5. It seems that direction 0 is the default if it has no other direction it can go, so it will go to the right? I always assumed that up was direction 0 but I may be wrong
+5. flag = i_dont_want_to_say_goodbye__gets_me_every_time_2fa00d62583c852b0e5ae11dcdcbabe1

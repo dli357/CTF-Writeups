@@ -1,0 +1,2 @@
+Open file with 7-zip (you can figure out it's a PK Zip file by looking at the hex)
+Replace file header, you can do that by copying a valid header for another one of the files in the zip

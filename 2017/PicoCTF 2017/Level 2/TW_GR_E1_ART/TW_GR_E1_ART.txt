@@ -1,0 +1,9 @@
+1. Find package.json file at shell2017.picoctf.com:16929/package.json
+2. Use to find /server/serv.js and /server/init.js
+3. Use /server/serv.js and developer console to find sources in /public/html/js
+	a. /public/html/js/client.js
+4. ??? (Made a wild guess after hitting a major wall)
+4.5. Randomly opened /server/game.js and gave me the file for the server host's source
+5. Find that, to reveal the flag, you have to pick up the one with object.check = 64
+6. Find flag object with check = 64
+7. Profit! flag = at_least_the_world_wasnt_destroyed_by_a_meteor_ad4c3d82ea34de855538845381a616cf

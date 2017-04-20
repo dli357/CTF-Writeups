@@ -1,0 +1,1 @@
+1. convert every byte then offset by 1-7 for starting byte. Do the same for the reading bytes as well, and you end up with an offset of (1, 6).

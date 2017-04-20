@@ -1,0 +1,4 @@
+FLAG{F0UND_M3_5148BBEA}
+
+Open file with SQLite, export to CSV with only Lat and Lon columns, concatenate using Excel, and paste on plotting website:
+https://www.darrinward.com/lat-long/?id=2813726

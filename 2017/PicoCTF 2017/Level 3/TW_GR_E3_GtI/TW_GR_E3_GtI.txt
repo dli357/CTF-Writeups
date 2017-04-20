@@ -1,0 +1,5 @@
+1. You are able to pick up multiple items that have the same id. Additionally, the sort function reassigns IDs to everybody.
+2. The flag is ID 12.
+Solution:
+1. Keep playing until you find an item with ID 12, then pick it up, go to flag room, drop, and pick up again.
+2. Overflow your inventory with the sort method to 13 items, then use the sort again. The 13th item will be ID 12. Go to flag room, drop it, and pick it up again.
