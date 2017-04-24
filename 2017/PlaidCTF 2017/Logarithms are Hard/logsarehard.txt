@@ -1,0 +1,4 @@
+1. Looking back at past PlaidCTF "x is hard" problems, we notice that it is a common theme to use a bug that occurred in the past.
+2. Searching for "2.7191928 bug" in Google yields http://www.datamath.org/Story/LogarithmBug.htm
+3. It was a bug in TI calculators back in 1994 and 2004. The calculators would output 2.7191928 for e instead of the correct value.
+4. Thus, the flag is 2.7191928

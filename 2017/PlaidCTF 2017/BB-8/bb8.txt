@@ -1,0 +1,17 @@
+1. This uses the BB84 QKD scheme to share a secret key between Alice and Bob.
+2. However, there doesn't seem to be protection against a man-in-the-middle attack.
+3. You have to masquerade as Alice to Bob and Bob to Alice.
+4. Since you are given a MITM interface, you can easily perform an attack.
+4a. Intercept all 600 bits from Alice, send Bob qubits basis Z and value -1. (Equivalent to sending him 600 bits of 0)
+4b. Send all guesses for Z basis to Alice, and, if you receive a guess for the Z basis from Bob, send an ACK 1 bit.
+4c. Send all your stored corresponding even values (0th, 2nd, 4th, etc.) to Alice, and, in response, send all qubits of Z basis and value 1 to Bob. (This assumes that he sends you all -1 values in the Z basis.)
+4d. Use first 128 odd values of your verified qubits to generate your AES.ECB encryption key with Alice, and use the key of 128 0 bits as the key with Bob.
+4e. Decode the flag characters using their corresponding keys.
+
+NOTE: Script will sometimes fail due to weird timings with python sockets. Apologies for the messy code.
+NOTE: You will need to run it a few times to recover both the message from Bob and the message from Alice, since each abort if one has transmitted the classical message.
+
+5. After quite a bit of finagling with data types, you finally are able to get the flag:
+PCTF{perhaps_secrecy_aint_the_same_thing_as_authentication}
+
+https://github.com/p4-team/crypto-commons
