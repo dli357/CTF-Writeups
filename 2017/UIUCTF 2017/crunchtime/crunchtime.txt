@@ -1,0 +1,7 @@
+1. The challenge encodes DTMF tones and sends you 11 sets of them.
+2. Use Goertzel's algorithm to decode the hex and send the hex back to them.
+3. After 11 sets of tones, it sends you the flag encoded hex in DTMF
+666C61677B49276D5F6633336C696E675F307831367D
+flag{I'm_f33ling_0x16}
+
+NOTE: Used modified code from here: https://github.com/hfeeki/dtmf/blob/master/dtmf-decoder.py

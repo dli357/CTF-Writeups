@@ -1,0 +1,8 @@
+https://blog.filippo.io/bleichenbacher-06-signature-forgery-in-python-rsa/
+
+1. Since we know that the EULA was dated 2015, it is using an implementation of python-rsa that is susceptible to the Bleichenbacher '06 signature forgery attack.
+2. Basically, you can find a cube root approximation such that the message is messagexxxxxxxxxxxxasn1hash, where x is the padding.
+3. The vulnerability is that the verify function does not verify that the padding is actually ff. Thus, anything can be in there.
+4. To forge a signature, follow website and script (I didn't really write the code myself... $forShame)
+flag:
+flag{it_was_all_good_just_a_key_ago}

@@ -1,0 +1,1 @@
+Pretty straight-forward attack here. Clearly, the flag oracle is susceptible to a timing attack, as it delays its response by .25 seconds for every right character the input flag has. Therefore, you just measure the time differences until you get that time difference.
