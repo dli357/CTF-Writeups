@@ -1,0 +1,8 @@
+First,
+
+credit to https://ehsandev.com/pico2014/cryptography/repeated_xor.html for basically helping me solve the problem. I kinda couldn't get my lazy implementations working.
+
+1. We figure out that this is repeated xor cipher, and, thus, using Kasiski Analysis is the best way to figure out the key length.
+2. My tool originally performed kasiski analysis on the key length, but I got stuck at a key length of 6 and convinced myself that was the correct length when, in fact, it was 12.
+3. Using his tool helped me decrypt.
+flag: primes_are_cool

@@ -1,0 +1,7 @@
+1. Seems like the software will not decrypt the file for you.
+2. Even looking at the decrypt function yields nothing, as the program only runs on an unlimited loop.
+3. Here, I noticed that there was an encrypt function.
+4. By reverse-engineering what the function does, you can figure out how the data is encrypted.
+5. Turns out that by looking at the decompiled code along with the assembly, encrypting is simply multiplying the decimal representation of every character by 2 and then xor with the decimal 46, or 0x2e.
+6. To solve, xor every number with 46 then divide by 2. Find the character representation of every remaining number.
+Flag: m3_LIKES_dat_DRM

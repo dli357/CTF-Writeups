@@ -1,0 +1,9 @@
+Hashkiller.co.uk is an md5 decrypter tool used online.
+
+Decrypting each of the hashes:
+oh you wish it were this easy? sorry to let you down but this rabbit hole goes deeper! the word 'AES' hash is the key now decrypt me START
+mJRKaaMSR1atUGs0kOkAJP3dty9tjCvXKMzWDHtZdRQ=
+
+1. Use the md5 hash of "AES" as the key for your decryption.
+2. Base64 decode the statement and then decrypt.
+Flag: flag{w3_l0v3_3ncrypt10n}

@@ -1,0 +1,9 @@
+1. There are three main components to how this 'encryption' algorithm works:
+	a. First, the binary pulls the characters, turns them into decimals, and adds them to the value of the character that followed them (E.G. if I gave you character ID's of 5, 10, 15, 20, it would encrypt to 15, 25, 35, 20).
+	b. Second, the binary then separates the numbers with commas and turns the entire number-comma system into a string.
+	c. Third, the binary then XOR's every single value of the new string with 97.
+	d. Finally, the binary then generates a random number and XOR's every single value of the string with that number a random number of times.
+2. Since we know that if the number generated is even it will XOR out to itself, we can disregard this part of the encryption scheme.
+3. We are really just looking for what builds the first number string: 210,205,200,198,217,227,206,200,168,171,168,139,130,160,206,222,209,211,232,184,182,213,225,239,118,
+Flag:
+flag_ziecEfBI9ggwZyoImhyv

@@ -1,0 +1,8 @@
+Banged my head upon this for hours
+
+then I realized
+
+I just needed to b64decode the data and look for recognizable strings
+
+Thus, the following code + a control f for flag will give you the flag:
+b'You found it! Flag: sometimes_needles_in_a_haystack_can_prick_you'

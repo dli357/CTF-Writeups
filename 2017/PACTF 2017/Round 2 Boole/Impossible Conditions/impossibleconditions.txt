@@ -1,0 +1,2 @@
+1. Jump past the 0!=0 check using GDB.
+2. Prints: abcx!ilgdn

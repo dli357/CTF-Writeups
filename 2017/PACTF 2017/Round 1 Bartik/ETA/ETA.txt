@@ -1,0 +1,8 @@
+1. Open up the binary in Kali GDB.
+2. Once you do that, after running the code and/or setting a few breakpoints, you notice that it hangs at the get_primes function. Why is this?
+3. It is because you are trying to get all primes before 2147483644
+4. Let's try lowering that number in the register. We know by examining the get_primes function that it is in register RSI. (The decompilation helps too)
+5. Lowered it to 3. Once the code ran, it output 3.
+6. 2 is a prime number, why didn't it output 2? Thus, had a hunch that the program output the last prime on the list.
+7. Look for the largest prime smaller than 2147483644
+flag: 2147483629

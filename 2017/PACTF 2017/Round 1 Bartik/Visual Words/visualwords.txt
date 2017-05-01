@@ -1,0 +1,4 @@
+1. Read numbers into bytes -> see script
+2. Once into bytes, you realize it repeats over and over again; however, they said they brightened it by scaling it.
+3. Divide every RGB value by 2.
+4. flag_HidingSomeFunStuffInThisImage!!

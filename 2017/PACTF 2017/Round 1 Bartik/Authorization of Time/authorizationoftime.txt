@@ -1,0 +1,13 @@
+QR Code is a key URI: 	
+otpauth://totp/PACTF%3AMiles?secret=ORUW2ZK7OBQXG43FONPWE5LUL5RXK2LMONPXG5DBPFPXI2DFL5ZWC3LF
+
+Base32 Decode of the secret is: time_passes_but_cuils_stay_the_same, which unfortunately is not the flag.
+
+Read up on Google Authenticator Key URI format: https://github.com/google/google-authenticator/wiki/Key-Uri-Format
+
+Solution:
+
+1. Download Google Authenticator onto mobile device.
+2. Scan QR code for authenticator.
+3. Change system time of phone to epoch-to-time value given. (9:00:09 PM EST)
+4. Input flag (which is the value of the authenticator code): 808365

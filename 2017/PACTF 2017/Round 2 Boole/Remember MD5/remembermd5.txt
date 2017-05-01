@@ -1,0 +1,4 @@
+1. Just brute force all the possible md5 according to the hint.
+2. The problem says that the answer is "about" 14 characters long, so, of course, after 14 characters fails, you check 13 and 15.
+The solution is 15 characters:
+abbabcbabcbabcb

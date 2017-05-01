@@ -1,0 +1,3 @@
+If you do a Google search on the terms provided in the problem, you are led to a powerpoint file for the 2010 SIGINT Development Conference concerning quantumtheory hacking tactics (?). Not to be confused with anything regarding quantum computing; in reality, is labled QUANTUM, codeword for the project, which is top secret.
+
+The exact string in the problem is in the powerpoint, so just find the string. The flag is the word: NINJANIC
