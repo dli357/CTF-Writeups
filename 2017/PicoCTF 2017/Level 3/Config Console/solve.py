@@ -84,6 +84,15 @@ for write in range(0, len(jmp) // 2):
     #printf hits an off-by-one error when you pad by 78. If you use
     #GDB, you'll notice that sending %77x -> %141$hnn both result in 4d being written.
     #That's why we need this if block. Not sure exactly why this off-by-one error occurs.
+    #EDIT: So %NUMBERx pads the string by a certain number, but only if it's larger than
+    #the length of %x. So, since %x will print a 12-character hex value, which means that
+    #if %x%n writes 1014, that means that there are actually 1014 - 12 = 1002 characters
+    #padding it prior. So, you pad by 22 because if you do %NUMBERx where NUMBER is less
+    #than the length of %x, then it will default to 12. E.G. %x = %12x. Additionally, the
+    #off-by-one error occurs because at 77 + 22 = 99, 78 + 22 = 100. Thus, the padding function
+    #I used above pads it one less character since %100x takes up one more character than %99x.
+    #Thus, you get 4d for both. Sorry if this explanation is kinda poor, this is best tested on
+    #your own using C.
     if write_val > 77:
         write_val += 23
     else:
