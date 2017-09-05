@@ -1,4 +1,4 @@
-#Joe - Writeup
+Joe - Writeup
 
 >Disclaimer: This was solved after the competition ended, though no help was given either way.
 
@@ -30,6 +30,7 @@ Thus, I began to look for places on the website that were vulnerable to XSS. Rem
 
 We notice that he repeats his name. What happens if we change his name?
 >Hello there, it's ABCDETESTTESTtesttest again.
+
 Hmmm... What if we take it further? Here, I tried to embed script tags into the name, since it would load when you refreshed the page. And I was successful! Using alert(), we were able to inject XSS.
 
 Here, I ran into a roadblock. What would allow us to show this XSS to the admin? If I delete my session cookie or log in as another user, the name resets.
